@@ -1,0 +1,24 @@
+flowchart TD
+    A("Get Coffee Beans")
+    B("Grind Coffee Beans")
+    C("Boil Water")
+    D("Add Coffee to Filter")
+    E("Pour Hot Water over Coffee")
+    F("Let Coffee Brew")
+    G("Enjoy Your Coffee")
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+
+    %% Optional node styling
+    style A color:#FFFFFF, fill:#6D4C41, stroke:#6D4C41
+    style B color:#FFFFFF, fill:#8D6E63, stroke:#8D6E63
+    style C color:#FFFFFF, fill:#4CAF50, stroke:#4CAF50
+    style D color:#FFFFFF, fill:#FFC107, stroke:#FFC107
+    style E color:#FFFFFF, fill:#FF9800, stroke:#FF9800
+    style F color:#FFFFFF, fill:#795548, stroke:#795548
+    style G color:#FFFFFF, fill:#3E2723, stroke:#3E2723
