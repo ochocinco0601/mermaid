@@ -1,3 +1,6 @@
+Source: https://www.datasciencecentral.com/building-professional-diagrams-llm-rag-example/
+Mermaid code starts below:
+
 flowchart LR
 
 %%{init: {'theme':'dark'}}%%
