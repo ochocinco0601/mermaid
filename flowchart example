@@ -1,0 +1,22 @@
+flowchart TD
+    classDef incident fill:#4a86e8,stroke:#2d5b9b,color:white,stroke-width:2px
+    classDef email fill:#ea4335,stroke:#b31412,color:white
+    classDef servicenow fill:#34a853,stroke:#1f6d33,color:white
+    classDef xmatters fill:#fbbc04,stroke:#c49102,color:white
+    classDef noaction fill:#9aa0a6,stroke:#666666,color:white
+    classDef optional stroke-dasharray: 5 5
+
+    BP[BigPanda Incident] --> |optional| EM[Email Notification]
+    BP --> |optional| SN[ServiceNow Incident]
+    BP --> |optional| XM[xMatters Page]
+    BP --> |optional| NA[No Action]
+    
+    BP:::incident
+    EM:::email
+    SN:::servicenow
+    XM:::xmatters
+    NA:::noaction
+    
+
+    %% Set relationships as optional
+    linkStyle 0,1,2,3 stroke:#666,stroke-width:1.5px,stroke-dasharray:5 5
